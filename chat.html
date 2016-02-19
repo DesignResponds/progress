@@ -19,7 +19,12 @@
     <script>
     var myDataRef = new Firebase('https://burning-heat-8707.firebaseio.com/');
 
-        
+        var authData = ref.getAuth();
+if (authData) {
+  console.log("User " + authData.uid + " is logged in with " + authData.provider);
+} else {
+  console.log("User is logged out");
+}
     
        $('#messageInput').keypress(function (e) {
         if (e.keyCode == 13) {
