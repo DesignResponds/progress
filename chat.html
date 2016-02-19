@@ -19,7 +19,7 @@
     <script>
     var myDataRef = new Firebase('https://burning-heat-8707.firebaseio.com/');
 
-        var authData = ref.getAuth();
+        var authData = myDataRef.getAuth();
 if (authData) {
   console.log("User " + authData.uid + " is logged in with " + authData.provider);
 } else {
