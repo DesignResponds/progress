@@ -3,7 +3,8 @@
         <link href='https://fonts.googleapis.com/css?family=Catamaran:400,100,700' rel='stylesheet' type='text/css'>
         <script src="http://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
         <script type="text/javascript">
-        
+        $(function() {
+            
 var $goal = parseInt($(".goal").text().replace('$', '').replace(',', ''));
 var $current = parseInt($(".current span").text().replace('$', '').replace(',', ''));
 
@@ -28,7 +29,7 @@ $(document).keypress(function(e) {
 
 	}
 });
-        
+        });
         </script>
         
         <style type="text/css">
